@@ -1,0 +1,74 @@
+<?php
+/**
+ * @author David Stutz
+ * @license GPLv3
+ * @package pictures
+ * @see https://sourceforge.net/projects/cmsimplebstrt/
+ * 
+ *  Copyright 2013 - 2014 David Stutz
+ *
+ *	This file is part of the bootstrap template for CMSimple.
+ *
+ *  The plugin is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The template is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *  GNU General Public License for more details.
+ *
+ *  @see <http://www.gnu.org/licenses/>.
+ */
+?>
+<?php require_once 'functions.php'; ?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<?php echo head();?>
+	</head>
+	
+	<body <?php echo onload();?>>
+		<div class="container">
+			<div class="header">
+				<div class="page-header">
+					<h3>
+						<?php echo $cf['site']['title']; ?>
+						<small>
+							<?php if (isset($cf['site']['subtitle'])) echo $cf['site']['subtitle']; ?>
+							<?php echo bootstrap_li($hc,'menulevel'); ?>
+						</small>
+					</h3>
+				</div>
+			</div>
+			<div id="content">
+				<p>
+					<?php echo editmenu();?>
+				</p>
+				
+				<?php echo content(); ?>
+				</b></u></i>
+				<br style="clear: both" />
+			</div>
+			<hr>
+			<div id="footer">
+				<div class="row">
+					<div class="span4">
+					    <p>
+    						<span class="muted">&copy; <?php echo date('Y'); ?> David Stutz</span><br>
+    						<span class="muted">Powered by <a href="http://www.cmsimple-xh.org/">CMSimple XH</a></span><br>
+    						<span class="muted">Powered by <a href="https://sourceforge.net/projects/cmsimplebstrt/">CMSimple Bootstrap Theme</a></span>
+					   </p>
+					</div>
+					<div class="span4">
+					    <p>
+					        <a href="http://davidstutz.de/impressum-legal-notice/">Impressum - Legal Notice</a>
+					    </p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</body>
+</html>
